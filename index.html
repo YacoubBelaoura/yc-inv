@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>THE BIG DAY</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="assets/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--===============================================================================================-->
+</head>
+
+<body>
+   <!-- <main id="App" class="overlay1"> -->
+<div id="fullpage">
+	<div class="section">
+   <main id="App" class="overlay1">
+     <h1 data-depth="0.2">{{ message }}</h1>
+     <button data-depth="0.6" class="toggle-overlay">Menu</button>
+   </main>
+   </div>
+   <div class="section">{{section01}}</div>
+	<div class="section">
+    <div id="container">
+    <img src="https://unsplash.it/1000/1000?random=" />
+    <div class="slide one"></div>  
+    </div>
+  </div>
+	<div id="section0" class="section">
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="assets/flowers.mp4" type="video/mp4">
+		</video>
+		<div class="layer">
+			<h1>fullPage.js videos</h1>
+		</div>
+  </div>
+</div>
+   <aside>
+     <div class="outer-close toggle-overlay">
+       <a class="close"><span></span></a>
+     </div>
+     <nav>
+       <ul>
+         <li><a href="#!">Home</a></li>
+         <li><a href="#!">Gallery</a></li>
+         <li><a href="#!">Features</a></li>
+         <li><a href="#!">About</a></li>
+       </ul>
+     </nav>
+   </aside>
+
+
+
+	<!--===============================================================================================-->
+	<!-- <script src="js/jquery/jquery-3.2.1.min.js"></script> -->
+	<!--===============================================================================================-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<!--===============================================================================================-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!--===============================================================================================-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js" integrity="sha512-v0jjVvFpZqb1BcXhgLbaBDRKwZ09IpWFZL5NHTNbW9MlSjhZihkxEz2uNeMGd6HuK1qnSEL6JdyTr24ZHlgKow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--===============================================================================================-->
+  <script> 
+    $(function(){
+      $('.toggle-overlay').click(function(){
+        $('aside').toggleClass('open');
+      })
+    })
+  </script>
+	<!-- FULLPAGE ===============================================================================================-->
+  <script> 
+    new fullpage('#fullpage', {
+      //options here
+      autoScrolling:true,
+      scrollHorizontally: true
+    });
+
+    //methods
+    fullpage_api.setAllowScrolling(false);
+
+  </script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- Vuejs ===============================================================================================-->
+  <script src="https://unpkg.com/vue@next"></script>
+	<!--===============================================================================================-->
+  <script>
+    const VueApp = {
+      data() {
+        return {
+          message: 'Responsive Full Screen Navigation Overlay',
+          section01: 'HELLO'
+        }
+      }
+    }
+
+    Vue.createApp(VueApp).mount('#fullpage')
+  </script>
+
+</body>
+
+</html>
