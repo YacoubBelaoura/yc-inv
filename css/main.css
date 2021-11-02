@@ -80,34 +80,29 @@
 }
 
 /* // ========== parallax ========== */
-#container {
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	border: solid 1px red;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
-.p-slide {
-	display: block;
-	position: relative;
-	left: 0;
-	top: 0;
-	height: 200px;
-	width: 200px;
-	background: red;
+.container{
+    /* background: url("assets/background.jpg") no-repeat; */
+    background: url("assets/background.jpg") no-repeat;
+    width: 100%;
+    overflow: hidden;
+    
 }
-
-img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
+/* .text h1{ */
+/*     font-family:  Verdana, sans-serif; */
+/*     display: flex; */
+/*     align-items: center; */
+/*     justify-content: center; */
+/*     padding: 20px; */
+/*     color: wheat; */
+/*     border: 1px solid rgb(19, 18, 18); */
+/*     background: rgb(19, 18, 18); */
+/* } */
 /* // ============ FULLPAGE  */
 /* Style for our header texts
 	* --------------------------------------- */
