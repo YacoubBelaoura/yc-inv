@@ -111,7 +111,8 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: linear-gradient(270deg, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc);
+	/* background: linear-gradient(270deg, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc); */
+	background: linear-gradient(270deg, #10002b,#240046,#3c096c,#5a189a,#7b2cbf,#9d4edd,#c77dff,#e0aaff);
 	background-size: 1800% 1800%;
 
 	-webkit-animation: overLay1 30s ease infinite;
