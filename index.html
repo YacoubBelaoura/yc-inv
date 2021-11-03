@@ -25,11 +25,13 @@
   <button  class="toggle-overlay">Menu</button>
   <div id="fullpage">
 
-    <div id="section1" class="section test overlay1">
+    <div class="section test overlay1">
         <!-- <h1 data-depth="0.4">{{ message ? }}</h1> -->
-      <main data-depth="0.2" id="App">
+      <div id="section1" class="max-h">
+        <div id="scene1" class="scene max-h">
+      <div data-depth="0.2" id="App" class="max-h">
         <div class="card ">
-          <img src="assets/ring01.png" class="ring-logo "/>
+          <!-- <img src="assets/ring01.png" class="ring-logo "/> -->
           <!-- </br> -->
         <h1 class="inv-text ">بسم الله الرحمان الرحيم</h1>
           </br>
@@ -40,7 +42,11 @@
             <div><span class="seconds"></span><div class="smalltext">Seconds</div></div>
           </div>
         </div>
-      </main>
+      </div>
+      <div data-depth="0.90"><img src="assets/fg01.png" ></div>
+      <div data-depth="0.60"><img src="assets/fg02.png" ></div>
+        </div>
+      </div>
     </div>
 
     <div class="section">{{section01}}</div>
@@ -88,7 +94,7 @@
     <script>
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
-        var scene1 = document.getElementById('section1');
+        var scene1 = document.getElementById('scene1');
         var parallax1 = new Parallax(scene1);
     </script>
   <!--===============================================================================================-->
