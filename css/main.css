@@ -1,6 +1,7 @@
 /* ==========testing =================== */
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa|Lateef&effect=neon&display=swap');
 .test{
-    background: url("https://source.unsplash.com/random") no-repeat;
+    background: url("../assets/bg01.jpg") no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
@@ -20,6 +21,27 @@
 /*  -webkit-font-smoothing: antialiased;  */
 /* } */
 /*  */
+.ring-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding: 10px 0px 10px 0px;
+}
+.row{
+    background: rgba(39,62,84,0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+.inv-text{
+  font-family: 'Aref Ruqaa',Lateef, sans-serif;
+  font-size: 30px;
+	color: #264653;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+}
 
 /* =================== */
 .css-selector {

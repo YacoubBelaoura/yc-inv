@@ -31,8 +31,9 @@
 /* } */
 /*  */
 #clockdiv{
-	font-family: sans-serif;
-	color: #fff;
+	font-family:'Aref Ruqaa', sans-serif;
+	/* color: #fff; */
+	color: #264653;
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
