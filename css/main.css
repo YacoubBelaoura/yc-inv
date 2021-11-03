@@ -207,8 +207,8 @@ video::-webkit-media-controls {
   border-radius: 15px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   font-size: 2rem;
-  height: 220px;
-  width: 370px;
+  /* height: 220px; */
+  width: 400px;
   margin: auto;
   /* top: calc(50% - 175px); */
   /* left: calc(50% - 200px); */

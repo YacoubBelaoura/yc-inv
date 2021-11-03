@@ -10,6 +10,7 @@
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/clock.css">
   <!--===============================================================================================-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
     integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
@@ -28,6 +29,12 @@
         <!-- <h1 data-depth="0.4">{{ message ? }}</h1> -->
       <main data-depth="0.2" id="App">
         <div class="card ">
+          <div id="clockdiv">
+            <div><span class="days"></span><div class="smalltext">Days</div></div>
+            <div><span class="hours"></span><div class="smalltext">Hours</div></div>
+            <div><span class="minutes"></span><div class="smalltext">Minutes</div></div>
+            <div><span class="seconds"></span><div class="smalltext">Seconds</div></div>
+          </div>
         </div>
       </main>
     </div>
@@ -114,6 +121,7 @@
   </script>
   <!--===============================================================================================-->
   <script src="js/main.js"></script>
+  <script src="js/clock.js"></script>
   <!-- Vuejs ===============================================================================================-->
   <!-- <script src="https://unpkg.com/vue@next"></script> -->
   <!-- <script> -->
