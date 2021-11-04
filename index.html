@@ -27,13 +27,22 @@
   <button  class="toggle-overlay">Menu</button>
   <div id="fullpage">
 
-    <div class="section test overlay1">
+    <div class="section ">
       <!-- <div data-depth="0.2" id="App" class="max-h"> -->
       <!-- </div> -->
-      <div class="card "  id="welcome-card" data-tilt-full-page-listening>
-        <img src="assets/ring01.png" class="ring-logo "/>
+      <video id="myVideo" loop muted data-autoplay>
+        <source src="assets/flowers.mp4" type="video/mp4">
+      </video>
+      <div class="card "  id="welcome-card" data-tilt-full-page-listening style="transform-style: preserve-3d">
+        <img src="assets/ring01.png" class="ring-logo "style="transform: translateZ(20px);"/>
         <!-- </br> -->
       <h1 class="inv-text ">بسم الله الرحمان الرحيم</h1>
+      <p class="inv-text ">
+إلى من يملكون معزة خاصة في قلوبنا. لم نجد أفضل منكم لمشاركتنا فرحتنا بهذا اليوم  نحن بإنتظاركم بكل حب بحظوركم تكتمل فرحتنا 
+      </p>
+      <p class="inv-text ">
+و الحد لله رب العالمين
+      </p>
         </br>
         <div id="clockdiv" style="transform: translateZ(20px);">
           <div><span class="days"></span><div class="smalltext">Days</div></div>
@@ -48,6 +57,7 @@
           <div data-depth="0.60"><img src="assets/fg02.png" ></div>
         </div>
       </div>
+      <div class="overlay1"></div>
     </div>
 
     <div class="section">{{section01}}</div>
@@ -64,14 +74,14 @@
       </div>
     </div>
 
-    <div id="section0" class="section ">
-      <video id="myVideo" loop muted data-autoplay>
-        <source src="assets/flowers.mp4" type="video/mp4">
-      </video>
-      <div class="layer">
-        <h1>fullPage.js videos</h1>
-      </div>
-    </div>
+    <!-- <div id="section0" class="section "> -->
+    <!--   <video id="myVideo" loop muted data-autoplay> -->
+    <!--     <source src="assets/flowers.mp4" type="video/mp4"> -->
+    <!--   </video> -->
+    <!--   <div class="layer"> -->
+    <!--     <h1>fullPage.js videos</h1> -->
+    <!--   </div> -->
+    <!-- </div> -->
 
   </div>
 

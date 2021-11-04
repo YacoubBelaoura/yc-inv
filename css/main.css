@@ -37,6 +37,9 @@
 	font-weight: 100;
 	text-align: center;
 }
+p.inv-text{
+  font-size: 20px;
+}
 .max-h {
   height: inherit;
     position: absolute;
@@ -99,7 +102,7 @@
 /* // ============== */
 
 .overlay1 {
-	position: relative;
+	/* position: relative; */
 	z-index: 1;
 }
 
@@ -124,7 +127,7 @@
 	/* background: -o-linear-gradient(top, #b224ef, #7579ff); */
 	/* background: -moz-linear-gradient(top, #b224ef, #7579ff); */
 	/* background: linear-gradient(top, #b224ef, #7579ff); */
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 /* // ========== parallax ========== */
@@ -183,7 +186,7 @@ h1 {
 	background-size: contain;
 	object-fit: cover;
 	/*cover video background */
-	z-index: 1;
+	z-index: -1;
 }
 
 
