@@ -6,7 +6,8 @@ body {
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
-  background: RGBA(29, 20, 35, 1);
+  /* background: RGBA(29, 20, 35, 1); */
+   background:  RGBA(29, 20, 35, 1) url("../assets/bg02.jpg") no-repeat fixed center; 
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -33,7 +34,8 @@ aside{
   height:100%;
   top:0;
   left:0;
-  background:linear-gradient(200deg, #27156e, #6a2a88, #9f4981);
+  /* background:linear-gradient(200deg, #27156e, #6a2a88, #9f4981); */
+  background:linear-gradient(200deg, #432371,#714674,#9f6976,#cc8b79,#faae7b);
   opacity: 0;
   visibility: hidden;
   -webkit-transition:all .5s ease;
