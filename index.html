@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/clock.css">
+  <link rel="stylesheet" type="text/css" href="css/progres-bar.css">
   <!-- Font-awesome==================================================================================-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--===============================================================================================-->
@@ -117,7 +118,9 @@
       </ul>
     </nav>
   </aside>
-
+<div class="mediPlayer">
+  <audio class="listen" preload="none" data-size="250" src="assets/music01.mp3"></audio>
+</div>
 
 
   <!-- Paralax ===============================================================================================-->
@@ -162,6 +165,7 @@
   <!--===============================================================================================-->
   <script src="js/main.js"></script>
   <script src="js/clock.js"></script>
+  <script src="js/player.js"></script>
   <!-- tilte js ===============================================================================================-->
   <script type="text/javascript">
     VanillaTilt.init(document.getElementById("welcome-card"), {
@@ -185,6 +189,10 @@
   <!--  -->
   <!--   Vue.createApp(VueApp).mount('#fullpage') -->
   <!-- </script> -->
+  <!-- html5 player =====================================================================================-->
+  <script>
+    $('.mediPlayer').mediaPlayer();
+  </script>
   <!-- howler ===============================================================================================-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
