@@ -11,8 +11,11 @@
   <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/clock.css">
+  <link rel="stylesheet" type="text/css" href="css/music.css">
+  <link rel="stylesheet" type="text/css" href="css/progres-bar.css">
   <!-- Font-awesome==================================================================================-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--===============================================================================================-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
     integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
@@ -38,8 +41,8 @@
       <!--   <source src="assets/flowers.mp4" type="video/mp4"> -->
       <!-- </video> -->
       <!-- <div><img src="assets/bg02.jpg"></div> -->
-      <div class="card " id="welcome-card" data-tilt-full-page-listening style="transform-style: preserve-3d">
-        <img src="assets/ring01.png" class="ring-logo " style="transform: translateZ(20px);" />
+      <div class="card c-logo" id="welcome-card" data-tilt-full-page-listening style="transform-style: preserve-3d">
+        <img src="assets/ring01.png" class="ring-logo " />
         <!-- </br> -->
         <h1 class="inv-text ">بسم الله الرحمان الرحيم</h1>
         <p class="inv-text ">
@@ -50,7 +53,7 @@
           و الحد لله رب العالمين
         </p>
         </br>
-        <div id="clockdiv" style="transform: translateZ(20px);">
+        <div id="clockdiv" >
           <div><span class="days"></span>
             <div class="smalltext">يوم</div>
           </div>
@@ -117,7 +120,25 @@
       </ul>
     </nav>
   </aside>
-
+    <div id="app-cover">
+        <div id="player">
+                    <div class="control">
+                        <div class="button" id="play-previous">
+                            <i class="fas fa-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+                            <i class="fas fa-forward"></i>
+                        </div>
+                    </div>
+        </div>
+    </div>
 
 
   <!-- Paralax ===============================================================================================-->
@@ -162,13 +183,19 @@
   <!--===============================================================================================-->
   <script src="js/main.js"></script>
   <script src="js/clock.js"></script>
+  <!-- <script src="js/player.js"></script> -->
+  <script src="js/music.js"></script>
   <!-- tilte js ===============================================================================================-->
   <script type="text/javascript">
     VanillaTilt.init(document.getElementById("welcome-card"), {
       max: 25,
       speed: 400,
       glare: true,
-      fullpagelistening: true,
+    //	speed: 600,
+      scale: 1,
+      transition: true,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      //perspective: 400,
     });
   </script>
   <!-- Vuejs ===============================================================================================-->
@@ -186,15 +213,21 @@
   <!--   Vue.createApp(VueApp).mount('#fullpage') -->
   <!-- </script> -->
   <!-- howler ===============================================================================================-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script> -->
+  <!--   var sound = new Howl({ -->
+  <!--     src: ['assets/music01.mp3','assets/music02.mp3'], -->
+  <!--     autoplay: true, -->
+  <!--     loop: true, -->
+  <!--   }); -->
+  <!--   // sound.play(); -->
+  <!-- </script> -->
+
   <script>
-    var sound = new Howl({
-      src: ['assets/music01.mp3','assets/music02.mp3'],
-      autoplay: true,
-      loop: true,
-    });
-    // sound.play();
-</script>
+      $(document).ready(function () {
+          $('.mediPlayer').mediaPlayer();
+      });
+  </script>
   <!--===============================================================================================-->
 
 </body>
