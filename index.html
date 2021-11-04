@@ -20,13 +20,15 @@
   <!-- Paralax=======================================================================================-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <!--tilt js========================================================================================-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js" integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+    integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--===============================================================================================-->
 </head>
 
 <body>
   <!-- <main id="App" class="overlay1"> -->
-  <button  class="toggle-overlay"> <i class="fa fa-bars fa-2x"></i></button>
+  <button class="toggle-overlay"> <i class="fa fa-bars fa-2x"></i></button>
   <div id="fullpage">
 
     <div class="section ">
@@ -35,29 +37,39 @@
       <!-- <video id="myVideo" loop muted data-autoplay> -->
       <!--   <source src="assets/flowers.mp4" type="video/mp4"> -->
       <!-- </video> -->
-      <div class="card "  id="welcome-card" data-tilt-full-page-listening style="transform-style: preserve-3d">
-        <img src="assets/ring01.png" class="ring-logo "style="transform: translateZ(20px);"/>
+      <!-- <div><img src="assets/bg02.jpg"></div> -->
+      <div class="card " id="welcome-card" data-tilt-full-page-listening style="transform-style: preserve-3d">
+        <img src="assets/ring01.png" class="ring-logo " style="transform: translateZ(20px);" />
         <!-- </br> -->
-      <h1 class="inv-text ">بسم الله الرحمان الرحيم</h1>
-      <p class="inv-text ">
-إلى من يملكون معزة خاصة في قلوبنا. لم نجد أفضل منكم لمشاركتنا فرحتنا بهذا اليوم  نحن بإنتظاركم بكل حب بحظوركم تكتمل فرحتنا 
-      </p>
-      <p class="inv-text ">
-و الحد لله رب العالمين
-      </p>
+        <h1 class="inv-text ">بسم الله الرحمان الرحيم</h1>
+        <p class="inv-text ">
+          إلى من يملكون معزة خاصة في قلوبنا. لم نجد أفضل منكم لمشاركتنا فرحتنا بهذا اليوم نحن بإنتظاركم بكل حب بحظوركم
+          تكتمل فرحتنا
+        </p>
+        <p class="inv-text ">
+          و الحد لله رب العالمين
+        </p>
         </br>
         <div id="clockdiv" style="transform: translateZ(20px);">
-          <div><span class="days"></span><div class="smalltext">يوم</div></div>
-          <div><span class="hours"></span><div class="smalltext">ساعة</div></div>
-          <div><span class="minutes"></span><div class="smalltext">دقيقة</div></div>
-          <div><span class="seconds"></span><div class="smalltext">ثانية</div></div>
+          <div><span class="days"></span>
+            <div class="smalltext">يوم</div>
+          </div>
+          <div><span class="hours"></span>
+            <div class="smalltext">ساعة</div>
+          </div>
+          <div><span class="minutes"></span>
+            <div class="smalltext">دقيقة</div>
+          </div>
+          <div><span class="seconds"></span>
+            <div class="smalltext">ثانية</div>
+          </div>
         </div>
       </div>
       <div id="section1" class="max-h">
         <div id="scene1" class="scene max-h">
-          <div data-depth="0.20"><img src="assets/rpbg01.png" ></div>
-          <div data-depth="0.60"><img src="assets/rpbg02.png" ></div>
-          <div data-depth="0.90"><img src="assets/rpbg03.png" ></div>
+          <div data-depth="0.20"><img src="assets/rpbg01.png"></div>
+          <div data-depth="0.60"><img src="assets/rpbg02.png"></div>
+          <div data-depth="0.90"><img src="assets/rpbg03.png"></div>
         </div>
       </div>
       <div class="overlay1"></div>
@@ -65,7 +77,7 @@
 
     <div class="section">
       <div>
-        <p class="fa fa-map fa-6x"style="font-size:60px;color:white;">
+        <p class="fa fa-map fa-6x" style="font-size:60px;color:white;">
       </div>
     </div>
 
@@ -98,9 +110,9 @@
     </div>
     <nav>
       <ul>
-        <li><a class="inv-text "href="#!">الرئيسية</a></li>
-        <li><a class="inv-text "href="#!">الخريطة</a></li>
-        <li><a class="inv-text "href="#!">المواعيد</a></li>
+        <li><a class="inv-text " href="#!">الرئيسية</a></li>
+        <li><a class="inv-text " href="#!">الخريطة</a></li>
+        <li><a class="inv-text " href="#!">المواعيد</a></li>
         <!-- <li><a href="#!">About</a></li> -->
       </ul>
     </nav>
@@ -109,12 +121,12 @@
 
 
   <!-- Paralax ===============================================================================================-->
-    <script>
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
-        var scene1 = document.getElementById('scene1');
-        var parallax1 = new Parallax(scene1);
-    </script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+    var scene1 = document.getElementById('scene1');
+    var parallax1 = new Parallax(scene1);
+  </script>
   <!--===============================================================================================-->
   <!-- <script src="js/jquery/jquery-3.2.1.min.js"></script> -->
   <!--===============================================================================================-->
@@ -155,10 +167,9 @@
     VanillaTilt.init(document.getElementById("welcome-card"), {
       max: 25,
       speed: 400,
-      glare: true, 
+      glare: true,
       fullpagelistening: true,
     });
-    
   </script>
   <!-- Vuejs ===============================================================================================-->
   <!-- <script src="https://unpkg.com/vue@next"></script> -->
@@ -174,6 +185,16 @@
   <!--  -->
   <!--   Vue.createApp(VueApp).mount('#fullpage') -->
   <!-- </script> -->
+  <!-- howler ===============================================================================================-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var sound = new Howl({
+      src: ['assets/music01.mp3','assets/music02.mp3'],
+      autoplay: true,
+      loop: true,
+    });
+    // sound.play();
+</script>
   <!--===============================================================================================-->
 
 </body>
