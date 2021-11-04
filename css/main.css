@@ -32,13 +32,18 @@
 .inv-text{
   font-family: 'Aref Ruqaa',Lateef, sans-serif;
   font-size: 30px;
-	color: #264653;
+	/* color: #264653; */
+  /* color:rgba(255,255,255,0.8); */
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
 }
+h1.inv-text{
+  color:rgba(255,255,255,0.8);
+}
 p.inv-text{
   font-size: 20px;
+  color:rgba(255,255,255,0.8);
 }
 .max-h {
   height: inherit;

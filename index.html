@@ -11,20 +11,22 @@
   <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/clock.css">
+  <!-- Font-awesome==================================================================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--===============================================================================================-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
     integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Paralax===============================================================================================-->
+  <!-- Paralax=======================================================================================-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <!--tilt js===============================================================================================-->
+  <!--tilt js========================================================================================-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js" integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--===============================================================================================-->
 </head>
 
 <body>
   <!-- <main id="App" class="overlay1"> -->
-  <button  class="toggle-overlay">Menu</button>
+  <button  class="toggle-overlay"> <i class="fa fa-bars fa-2x"></i></button>
   <div id="fullpage">
 
     <div class="section ">
@@ -45,10 +47,10 @@
       </p>
         </br>
         <div id="clockdiv" style="transform: translateZ(20px);">
-          <div><span class="days"></span><div class="smalltext">Days</div></div>
-          <div><span class="hours"></span><div class="smalltext">Hours</div></div>
-          <div><span class="minutes"></span><div class="smalltext">Minutes</div></div>
-          <div><span class="seconds"></span><div class="smalltext">Seconds</div></div>
+          <div><span class="days"></span><div class="smalltext">يوم</div></div>
+          <div><span class="hours"></span><div class="smalltext">ساعة</div></div>
+          <div><span class="minutes"></span><div class="smalltext">دقيقة</div></div>
+          <div><span class="seconds"></span><div class="smalltext">ثانية</div></div>
         </div>
       </div>
       <div id="section1" class="max-h">
@@ -61,16 +63,20 @@
       <div class="overlay1"></div>
     </div>
 
-    <div class="section">{{section01}}</div>
+    <div class="section">
+      <div>
+        <p class="fa fa-map fa-6x"style="font-size:60px;color:white;">
+      </div>
+    </div>
 
     <div class="section">
 
       <div id="container" class="container">
         <div id="scene" class="scene">
-          <div data-depth="1.00"><img src="assets/astronaut.png"></div>
-          <div data-depth="0.60"><img src="assets/Neptune.png"></div>
-          <div data-depth="0.40"><img src="assets/Mars.png"></div>
-          <div data-depth="0.80"><img src="assets/rocket.png"></div>
+          <!-- <div data-depth="1.00"><img src="assets/astronaut.png"></div> -->
+          <!-- <div data-depth="0.60"><img src="assets/Neptune.png"></div> -->
+          <!-- <div data-depth="0.40"><img src="assets/Mars.png"></div> -->
+          <!-- <div data-depth="0.80"><img src="assets/rocket.png"></div> -->
         </div>
       </div>
     </div>
@@ -92,10 +98,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#!">Home</a></li>
-        <li><a href="#!">Gallery</a></li>
-        <li><a href="#!">Features</a></li>
-        <li><a href="#!">About</a></li>
+        <li><a class="inv-text "href="#!">الرئيسية</a></li>
+        <li><a class="inv-text "href="#!">الخريطة</a></li>
+        <li><a class="inv-text "href="#!">المواعيد</a></li>
+        <!-- <li><a href="#!">About</a></li> -->
       </ul>
     </nav>
   </aside>
