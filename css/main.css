@@ -9,6 +9,22 @@
 	overflow: hidden;
 	position: relative;
 } */
+.img-petal{
+	height: 130%;
+	width: 130%;
+	/* margin: -30%; */
+}
+.img-p01 {
+	background: transparent url("../assets/rpbg01.png") repeat ;
+}
+
+.img-p02 {
+	background: transparent url("../assets/rpbg02.png") repeat ;
+}
+
+.img-p03 {
+	background: transparent url("../assets/rpbg03.png") repeat ;
+}
 
 .c-logo {
 	transform-style: preserve-3d;
@@ -58,6 +74,8 @@ p.inv-text {
 	position: absolute;
 	/* z-index: -1; */
 	top: 0;
+	right: 0px;
+	left: 0px;
 }
 
 /* =================== */
