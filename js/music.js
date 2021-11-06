@@ -220,7 +220,7 @@ $(function () {
     function initPlayer() {
         audio = new Audio();
 
-        selectTrack(1);
+        selectTrack(0);
 
         audio.loop = true;
 
