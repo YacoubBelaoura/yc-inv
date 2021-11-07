@@ -9,6 +9,20 @@
 	overflow: hidden;
 	position: relative;
 } */
+#gmap-1{
+  height: 100vh;
+  width: 100%;
+}
+.gmap-over{
+  height: 100vh;
+  width: 150%;
+  /* box-shadow: inset 0px 0px 100px rgba(0,0,0,0.9); */
+  box-shadow: inset 0px 0px 50px 100px rgba(82, 174, 255, 0.9);
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  pointer-events: none;
+}
 .img-petal{
 	height: 130%;
 	width: 130%;
