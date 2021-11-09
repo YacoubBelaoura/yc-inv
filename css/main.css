@@ -58,19 +58,19 @@
 
 .ring-logo {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 25%;
-	padding: 10px 0px 10px 0px;
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	/* width: 25%; */
+	/* padding: 10px 0px 10px 0px; */
 }
 
 .inv-text {
 	font-family: 'Aref Ruqaa', Lateef, sans-serif;
-	font-size: 30px;
+	/* font-size: 30px; */
 	/* color: #264653; */
 	/* color:rgba(255,255,255,0.8); */
 	/* display: inline-block; */
-	font-weight: 100;
+	/* font-weight: 100; */
 	text-align: center;
 }
 
@@ -202,13 +202,13 @@
 /* // ============ FULLPAGE  */
 /* Style for our header texts
 	* --------------------------------------- */
-h1 {
+/* h1 {
 	font-size: 5em;
 	font-family: arial, helvetica;
 	color: #fff;
 	margin: 0;
 	padding: 0;
-}
+} */
 
 /* Centered texts in each section
 	* --------------------------------------- */
