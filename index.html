@@ -60,12 +60,12 @@
 							الموقع
 						</div>
 					</div>
-					<iframe class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block lg:45 w-full"
+					<iframe id="map_frame" class=" transform transition-opacity duration-300 bg-white rounded-none lg:rounded-lg shadow-2xl hidden lg:block lg:45 w-full"
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1103.2126523921372!2d-0.2941042916993373!3d27.88334220894657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaebc357b6aaaac06!2zMjfCsDUyJzYwLjAiTiAwwrAxNyczOC42Ilc!5e1!3m2!1sen!2sdz!4v1637959727497!5m2!1sen!2sdz"
 						width="800" height="700" style="border:0;" allowfullscreen="false" loading="lazy">
 					</iframe>
 				</div>
-				<div class="back bg-white rounded-xl opacity-90">
+				<div class="back bg-white rounded-xl ">
 					<div class="content">
 
 						<h3 class="inv-text text-gray-900 text-3xl py-10">المواعيد</h3>
@@ -247,6 +247,7 @@
 		$(document).ready(function () {
 			$('#event-btn').click(function () {
 				$(".card-a").toggleClass('flipped');
+				$("#map_frame").toggleClass("opacity-0");
 				if ($("#event-btn").text() == 'المواعيد') {
 					$("#event-btn").html("الموقع");
 				} else {
